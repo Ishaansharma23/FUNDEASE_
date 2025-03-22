@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InvestorHub - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/investor.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="https://img.icons8.com/ios-filled/50/007bff/briefcase.png" >
+                InvestorHub
+            </div>
+            <button class="btn-portfolio">My Portfolio</button>
+            <form action="/LogOut" method="post">
+            <button class="logout">LogOut</button>
+            </form>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="search-filter">
+            <input type="text" placeholder="Search startups...">
+            <select>
+                <option>Artificial Intelligence</option>
+                <option>Real Estate</option>
+                <option>FinTech</option>
+                <option>Healthcare</option>
+                <option>E-commerce</option>
+                <option>EdTech</option>
+            </select>
+            <select>
+                <option>Idea Stage</option>
+                <option>Pre-Seed</option>
+                <option>Seed</option>
+                <option>Series A</option>
+                <option>Series B</option>
+                <option>Series C</option>
+                <option>Growth Stage</option>
+                <option>IPO</option>
+            </select>
+        </div>
+
+        <!-- Startup Listings -->
+        <div class="startup-list">
+            
+            <div class="card">
+                <h3>TechFlow AI</h3>
+                <img src="/images/Edtech.jpg" class="techflowimg">
+                <p>San Francisco, CA</p>
+                <p>AI-powered workflow automation platform</p>
+                <span class="tag">Artificial Intelligence</span>
+                <span class="tag">Seed</span>
+                <p>Valuation: <span class="valuation">$5M</span></p>
+                <p>Raised: <span class="raised">$1.2M</span></p>
+                <button onclick="btnclick()">Connect</button>
+            </div>
+
+            <div class="card">
+                <h3>Stripe</h3>
+                <img src="/images/Edtech.jpg" class="techflowimg">
+                <p>San Francisco, CA</p>
+                <p>AI-powered workflow automation platform</p>
+                <span class="tag">FinTech</span>
+                <span class="tag">Series A</span>
+                <p>Valuation: <span class="valuation">$2M</span></p>
+                <p>Raised: <span class="raised">$1M</span></p>
+                 <button onclick="btnclick()">Connect</button>
+            </div>
+
+            <div class="card">
+                <h3>Robinhood</h3>
+                <img src="/images/Edtech.jpg" class="techflowimg">
+                <p>San Francisco, CA</p>
+                <p>AI-powered workflow automation platform</p>
+                <span class="tag">FinTech</span>
+                <span class="tag">Series B</span>
+                <p>Valuation: <span class="valuation">$12M</span></p>
+                <p>Raised: <span class="raised">$7M</span></p>
+                 <button onclick="btnclick()">Connect</button>       
+                 </div>
+
+            <div class="card">
+                <h3>GoStudent</h3>
+                <img src="/images/Edtech.jpg" class="techflowimg">
+                <p>San Francisco, CA</p>
+                <p>AI-powered workflow automation platform</p>
+                <span class="tag">ED-Tech</span>
+                <span class="tag">Growth</span>
+                <p>Valuation: <span class="valuation">$5M</span></p>
+                <p>Raised: <span class="raised">$2M</span></p>
+                 <button onclick="btnclick()">Connect</button>
+            </div>
+
+            <div class="card">
+                <h3>University Living</h3>
+                <img src="/images/Edtech.jpg" class="techflowimg">
+                <p>San Francisco, CA</p>
+                <p>AI-powered workflow automation platform</p>
+                <span class="tag">ED-Tech</span>
+                <span class="tag">IPO</span>
+                <p>Valuation: <span class="valuation">$1M</span></p>
+                <p>Raised: <span class="raised">$4M</span></p>
+                 <button onclick="btnclick()">Connect</button>
+            </div>
+            <div class="card">
+                <h3>Kidzpreneur Education Pvt Ltd</h3>
+                <img src="/images/Edtech.jpg" class="techflowimg">
+                <p>San Francisco, CA</p>
+                <p>AI-powered workflow automation platform</p>
+                <span class="tag">ED-Tech</span>
+                <span class="tag">Pre Seed</span>
+                <p>Valuation: <span class="valuation">$9M</span></p>
+                <p>Raised: <span class="raised">$13M</span></p>
+                 <button onclick="btnclick()">Connect</button>
+            </div>
+            <div class="card">
+                <h3>Venmo</h3>
+                <img src="/images/Edtech.jpg" class="techflowimg">
+                <p>San Francisco, CA</p>
+                <p>AI-powered workflow automation platform</p>
+                <span class="tag">ED-Tech</span>
+                <span class="tag">Series A</span>
+                <p>Valuation: <span class="valuation">$12M</span></p>
+                <p>Raised: <span class="raised">$1M</span></p>
+                 <button onclick="btnclick()">Connect</button>
+            </div>
+            <div class="card">
+                <h3>GreenEnergy Solutions</h3>
+                 <img src="/images/Edtech.jpg" class="techflowimg">
+                <p>Austin, TX</p>
+                <p>Renewable energy storage solutions</p>
+                <span class="tag">Clean Tech</span>
+                <span class="tag">Series A</span>
+                <p>Valuation: <span class="valuation">$15M</span></p>
+                <p>Raised: <span class="raised">$3.5M</span></p>
+                 <button onclick="btnclick()">Connect</button>Add to 
+      ion      </div>
+        </div>
+    </div>
+    <script>
+        function btnclick(){
+            alert("Your Connection Request Has Been Sent")
+        }
+    </script>
+</body>
+
+</html>

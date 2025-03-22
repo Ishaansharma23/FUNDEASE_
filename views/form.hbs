@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration & Login</title>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+    <div class="container" id="registerForm">
+        <h1>INVESTOR</h1>
+        <h2>Register</h2>
+        <form action="/register" method="POST">
+        <input type="text" placeholder="Full Name" required name="name">
+        <input type="email" placeholder="Email" required name="email">
+        <input type="password" placeholder="Password" required name="password">
+        <button type="submit">Register</button>
+        </form>
+        <p class="toggle-link" onclick="toggleForms()">Already have an account? Login</p>
+    </div>
+
+    <div class="container" id="loginForm" style="display: none;">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+        <input type="email" placeholder="Email" required name="email">
+        <input type="password" placeholder="Password" required name="password">
+        <button>Login</button>
+        </form>
+        <p class="toggle-link" onclick="toggleForms()">Don't have an account? Register</p>
+    </div>
+
+    <script>
+        function toggleForms() {
+            const registerForm = document.getElementById('registerForm');
+            const loginForm = document.getElementById('loginForm');
+            registerForm.style.display = registerForm.style.display === 'none' ? 'block' : 'none';
+            loginForm.style.display = loginForm.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/SignUp</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">FUNDEASE</div>
+        <nav>
+            <ul>
+                <li><a href="#">Startups</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box">
+            <img src="/images/investor_icon.png" alt="Investor Icon">
+            <h2>I am an Investor</h2>
+            <p>Get access to thousands of verified startups to invest in & expand your investment portfolio.</p>
+            <button class="button" onclick="openForm()">Join as Investor</button>
+        </div>
+        <div class="box">
+            <img src="/images/startup_icon.png" alt="Startup Icon">
+            <h2>I am a Startup</h2>
+            <p>Get access to thousands of accredited investors & bring value-added capital to your cap table.</p>
+            <button class="button" onclick="openstartupform()">Join as Startup</button>
+        </div>
+    </div>
+    <script src="/login.js"></script>
+    <script>
+        function openForm(){
+            window.location.href = "/form.html"
+        }
+        function openstartupform(){
+            window.location.href = "/form_startup.html"
+        }
+    </script>
+
+</body>
+</html>
