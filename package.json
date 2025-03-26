@@ -1,7 +1,6 @@
 {
   "name": "mernbackend",
   "version": "1.0.0",
-  "main": "app.js",
   "scripts": {
     "build":"node src/app.js",
     "dev": "nodemon src/app.js"
