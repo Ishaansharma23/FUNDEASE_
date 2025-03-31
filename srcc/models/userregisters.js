@@ -33,14 +33,13 @@ employeeSchema.methods.generateAuthtoken = async function() {
     } catch (error) {
         console.log(`this is the error${error}`)
     }
-    // hellomynameisishaansharmastudentof
+   
 }
 
 // converting passowrd into hashed passowrd
 employeeSchema.pre("save" , async function(next){
-    console.log(`your current password is ${this.password}`)
+    
     this.password = await bcrypt.hash(this.password , 10);
-    console.log(`your new hashed password ${this.password}`)
     next()
 })
 
